@@ -1,0 +1,290 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*webkit placeholder color*/
+
+*::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.5);
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: rgba(255,255,255,0.5);
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: rgba(255,255,255,0.5);
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(255,255,255,0.5);
+}
+
+/*reset*/
+
+/*general*/
+body{
+    font-family: 'open_sanslight';
+    color: white;
+    width: 100%;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul li{
+    list-style: none;
+}
+
+/*header*/
+header{
+    background-color: #ff8b38;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+}
+
+header .logo{
+    width: 20%;
+    margin-right: 30%;
+    float: left;
+    padding: 20px 0 20px 20px;
+}
+
+header .logo img{
+    width: 100%;
+}
+
+header .searchbox{
+    width: 20%;
+    float: left;
+    padding: 35px 0;
+}
+
+header .searchbox input{
+    width: 80%;
+}
+
+header .searchbox input:focus{
+    width: 100%;
+}
+
+header .searchbox #search{
+    background-color: rgba(255,255,255,0.1);
+    outline: none;
+    border: 0;
+    padding: 10px 5px;
+    width: 80%;
+    color: white;
+    font-size: 1em;
+}
+
+header .searchbox #searchbtn{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+header .menu{
+    width: 20%;
+    float: left;
+    padding: 10px 20px;
+}
+
+header .menu li{
+    float: right;
+    font-size: 2em;
+    padding: 20px;
+}
+header .menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+#menuicon{
+    transition: transform 0.5s;
+}
+
+.menu-action {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transform: tra
+}
+
+/*main*/
+
+.main{
+    width: 100%;
+    padding-top: 90px;
+    position: relative;
+    overflow: hidden;
+}
+
+#slider-main img{
+    width: 100%;
+    overflow: hidden
+}
+
+/*destacados home*/
+.destacados{
+    overflow: hidden;
+    position: relative;
+}
+
+.destacados .title{
+    font-family: 'open_sansextrabold';
+    color: #ff8b38;
+    font-size: 2em;
+    text-transform: uppercase;
+    clear: both;
+    width: 100%;
+    padding: 20px 0 5px 0;
+}
+
+.gradiant-border{
+    border-bottom: 2px solid #ff8b38;
+}
+
+.destacados .eventos-min{
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.destacados .eventos-min figure{
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    padding: 20px 0 0 0 ;
+}
+
+.destacados .eventos-min figure:nth-child(3), .destacados .eventos-min figure:nth-child(6){
+    margin: 0;
+}
+
+.destacados .eventos-min figure img{
+    width: 100%;
+}
+
+.eventos-min figure figcaption{
+    position: absolute;
+    bottom: 4px;
+    background-color: rgba(255,255,255,0.6);
+    width: 100%;
+    padding: 5px 2px;
+    color: black;
+}
+
+.eventos-min figure .subtitle-ev-min{
+    font-family: 'open_sansextrabold';
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+.eventos-min figure:hover figcaption{
+    height: 100%;
+    padding: 35% 0;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    font-size: 1.2em;
+    transition: 0.2s;
+}
+
+.eventos-min figure figcaption p{
+    text-transform: uppercase;
+}
+
+
+/*.eventos-min figure:hover .subtitle-ev-min{
+    color: orange;
+}*/
+
+/*footer*/
+footer{
+    position: relative;
+    background-color: #ff8b38;
+    overflow: hidden;
+    padding: 10px 0 20px 0;
+}
+
+footer .container div{
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    overflow: hidden;
+}
+
+footer .container div:nth-child(3){
+    margin: 0;
+}
+
+footer .puntos-venta h2{
+    width: 100%;
+}
+
+footer .puntos-venta img{
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+}
+
+footer .puntos-venta img:last-child, footer .medios-pago img:last-child, footer .redes-sociales .rs li:last-child{
+    margin: 0;
+}
+
+footer .medios-pago h2{
+    width: 100%;
+}
+
+footer .medios-pago img{
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+}
+
+footer .redes-sociales .rs{
+    list-style: none;
+}
+
+footer .rs li{
+    text-align: center;
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+}
+
+footer .rs a{
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 5px;
+    color: white;
+}
+
+footer .subtitle-footer{
+    padding: 20px 0;
+    font-family: 'open_sansextrabold';
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+footer .copyright{
+    width: 100%;
+    clear: both;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px 0 5px 0;
+}
