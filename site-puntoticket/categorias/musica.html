@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html lang-menu="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Puntoticket</title>
+    <title>Música | Puntoticket</title>
     <!--Site style-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!--font awesome-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
     <!--Open sans font-->
-    <link rel="stylesheet" href="fonts/OpenSans/stylesheet.css">
+    <link rel="stylesheet" href="../fonts/OpenSans/stylesheet.css">
     <!--JQuery library-->
-    <script src="js/jquery-1.11.3.js"></script>
+    <script src="../js/jquery-1.11.3.js"></script>
     <!--JS and JQ actions-->
-    <script src="js/script.js"></script>
-    <!--unslider css-->
-    <link rel="stylesheet" href="css/unslider.css">
-    <link rel="stylesheet" href="css/unslider-dots.css">
+    <script src="../js/script.js"></script>
     <!--Title bar Icon-->
-    <link rel="shortcut icon" href="img/web-icon.png" />
+    <link rel="shortcut icon" href="../img/web-icon.png" />
 </head>
 <body>
-    <header>
+     <header>
         <div class="container">
             <div class="logo">
-                <a href="#"><img src="img/logo-puntoticket.png" alt="Logo puntoticket"></a>
+                <a href="../index.html"><img src="../img/logo-puntoticket.png" alt="Logo puntoticket"></a>
             </div>
             <nav>
                 <div class="search">
@@ -36,17 +33,17 @@
                 </ul> 
                 <!--burguermenu-->
                 <ul class="burguer-menu">
-                    <li><a href="#" class="selected">Home</a></li>
-                    <li><a href="#" id="categ-btn"><i class="fa fa-caret-down" id="categ-icon"></i>Categorías</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#" id="categ-btn" class="selected"><i class="fa fa-caret-down" id="categ-icon"></i>Categorías</a></li>
                     <!--categories menu-->
                     <div class="categ-menu">
-                        <li><a href="categorias/musica.html"><i class="fa fa-caret-right"></i>Música</a></li>
-                        <li><a href="categorias/cultura.html"><i class="fa fa-caret-right"></i>Cultura</a></li>
-                        <li><a href="categorias/deportes.html"><i class="fa fa-caret-right"></i>Deportes</a></li>
-                        <li><a href="categorias/miscelaneos.html"><i class="fa fa-caret-right"></i>Misceláneos</a></li>
+                        <li><a href="#" class="selected"><i class="fa fa-caret-right"></i>Música</a></li>
+                        <li><a href="cultura.html"><i class="fa fa-caret-right"></i>Cultura</a></li>
+                        <li><a href="deportes.html"><i class="fa fa-caret-right"></i>Deportes</a></li>
+                        <li><a href="miscelaneos.html"><i class="fa fa-caret-right"></i>Misceláneos</a></li>
                     </div>
-                    <li><a href="acercade.html">Acerca de</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="../acercade.html">Acerca de</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
                     <hr class="menu-divider">
                     <li><a href="#">Iniciar sesión</a></li>
                     <li><a href="#">Registro</a></li>
@@ -63,25 +60,21 @@
             </nav>
         </div>
     </header>
-    <!--main home-->
-    <section class="main">
-        <!--slider-->
-        <div id="slider-main">
-            <ul>
-                <li><img src="img/banner-tdep.jpg" alt="The Dillinger Escape Plan banner"></li>
-                <li><img src="img/banner-cityncolour.jpg" alt="City And Colour banner"></li>
-                <li><img src="img/banner-cob.jpg" alt="Children of Bodom banner"></li>
-                <li><img src="img/banner-foals.png" alt="Foals banner"></li>
-            </ul>
-        </div>
+    <!--interior banner-->
+    <section class="int-banner">
+        <figure>
+            <img src="../img/banner-categ-musica.jpg" alt="Banner de Música: concierto random">
+            <figcaption>
+                <h2 class="int-title">Música</h2>
+            </figcaption>
+        </figure>
     </section>
-    <!--destacados home-->
-    <section class="destacados">
+    <!--interior content-->
+    <section class="int-content">
         <div class="container">
-           <h1 class="title gradiant-border">Eventos destacados</h1>
             <div class="eventos-min">
                 <figure>
-                    <img src="img/min-lollapalooza.jpg" alt="Lollapalooza chiquillas">
+                    <img src="../img/min-lollapalooza.jpg" alt="Lollapalooza chiquillas">
                     <figcaption>
                         <h2 class="subtitle-ev-min">Lollapalooza 2016</h2>
                         <p class="fecha-ev-min">19-20 Marzo 12:00 hrs.</p>
@@ -89,7 +82,7 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="img/min-chile.jpg" alt="Equipo de Chile celebrando">
+                    <img src="../img/min-chile.jpg" alt="Equipo de Chile celebrando">
                     <figcaption>
                         <h2 class="subtitle-ev-min">Chile vs. Argentina</h2>
                         <p class="fecha-ev-min">24 Marzo 20:30 hrs.</p>
@@ -97,7 +90,7 @@
                     </figcaption>
                 </figure>
                 <figure class="no-margin">
-                    <img src="img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
+                    <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
                     <figcaption>
                         <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
                         <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
@@ -105,7 +98,7 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="img/min-cityandcolour.jpg" alt="City and Colour live">
+                    <img src="../img/min-cityandcolour.jpg" alt="City and Colour live">
                     <figcaption>
                         <h2 class="subtitle-ev-min">City and Colour</h2>
                         <p class="fecha-ev-min">23 Abril 21:00 hrs.</p>
@@ -113,7 +106,7 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="img/min-cob.jpg" alt="Children of Bodom guitar live">
+                    <img src="../img/min-cob.jpg" alt="Children of Bodom guitar live">
                     <figcaption>
                         <h2 class="subtitle-ev-min">Children of Bodom</h2>
                         <p class="fecha-ev-min">24 Mayo 20:30 hrs.</p>
@@ -121,7 +114,7 @@
                     </figcaption>
                 </figure>
                 <figure class="no-margin">
-                    <img src="img/min-foals.jpg" alt="Foals live">
+                    <img src="../img/min-foals.jpg" alt="Foals live">
                     <figcaption>
                         <h2 class="subtitle-ev-min">Foals</h2>
                         <p class="fecha-ev-min">12 Octubre 21:00 hrs.</p>
@@ -131,19 +124,19 @@
             </div>
         </div>
     </section>
-    <!--footer-->
+    
     <footer>
         <div class="container">
             <div class="puntos-venta">
                 <h2 class="subtitle-footer">Puntos de venta</h2>
-                <img class="left" src="img/logo-ripley.png" alt="Logo Ripley">
-                <img class="right" src="img/logo-cinemark.png" alt="Logo Cinemark">
+                <img class="left" src="../img/logo-ripley.png" alt="Logo Ripley">
+                <img class="right" src="../img/logo-cinemark.png" alt="Logo Cinemark">
             </div>
             <div class="medios-pago">
                 <h2 class="subtitle-footer">Medios de pago</h2>
-                <img class="left" src="img/logo-khipu.png" alt="Logo Khipu">
-                <img src="img/logo-paypal.png" alt="Logo Paypal" class="center">
-                <img src="img/logo-webpay.png" alt="Logo Webpay" class="right">
+                <img class="left" src="../img/logo-khipu.png" alt="Logo Khipu">
+                <img src="../img/logo-paypal.png" alt="Logo Paypal" class="center">
+                <img src="../img/logo-webpay.png" alt="Logo Webpay" class="right">
             </div>
             <div class="redes-sociales">
                 <h2 class="subtitle-footer">Siguenos</h2>
@@ -156,8 +149,5 @@
         </div>
         <p class="copyright">&copy;Vertikal 2016</p>
     </footer>
-    
-    <!--slider js-->
-    <script src="js/unslider-min.js"></script>
 </body>
 </html>
