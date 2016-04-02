@@ -24,9 +24,10 @@
     color: rgba(255,255,255,0.5);
 }
 
-/*reset*/
+/*RESET*/
 
-/*general*/
+
+/***GENERAL***/
 body{
     font-family: 'open_sanslight';
     color: white;
@@ -42,7 +43,12 @@ ul li{
     list-style: none;
 }
 
-/*header*/
+a{
+    text-decoration: none;
+}
+
+/***HEADER***/
+
 header{
     background-color: #ff8b38;
     width: 100%;
@@ -63,13 +69,13 @@ header .logo img{
     width: 100%;
 }
 
-header .searchbox{
+header .search{
     width: 20%;
     float: left;
     padding: 3% 0 2.2% 0; 
 }
 
-header .searchbox #search{
+header .search #search-box{
     background-color: rgba(255,255,255,0.1);
     outline: none;
     border: 0;
@@ -79,13 +85,13 @@ header .searchbox #search{
     font-size: 1em;
 }
 
-header .menu{
+header .main-menu{
     width: 20%;
     float: right;
     padding: 0.3% 0;
 }
 
-header .menu li{
+header .main-menu li{
     float: left;
     font-size: 2em;
     padding: 11% 0;
@@ -94,31 +100,31 @@ header .menu li{
     text-align: center;
 }
 
-header .menu li:first-child{
+header .main-menu li:first-child{
     padding-left: 0;
     margin: 0;
 }
 
-header .menu li:last-child{
+header .main-menu li:last-child{
     padding-right: 0;
     margin: 0;
 }
 
-header .menu li a{
-    text-decoration: none;
+header li a{
     color: white;
 }
 
-header .menu li a:hover{
+header li a:hover{
     color: black;
     transition: 0.2s;
 }
 
-#menuicon, #langbtn, #cat-arrow{
+#burguer-btn, #lang-btn, #categ-icon{
     transition: transform 0.5s;
 }
 
-.menu-action {
+/*burguer button rotation*/
+.burguer-menu-action {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -126,7 +132,8 @@ header .menu li a:hover{
     transform: rotate(-90deg);
 }
 
-.lang-action{
+/*lang button rotation*/
+.lang-menu-action{
     -webkit-transform: rotate(-360deg);
     -moz-transform: rotate(-360deg);
     -ms-transform: rotate(-360deg);
@@ -134,11 +141,10 @@ header .menu li a:hover{
     transform: rotate(-360deg);
 }
 
-/*lang menu*/
-.lang{
+/*hidden lang-menu*/
+.lang-menu{
     width: 20%;
     right: 5%;
-    list-style: none;
     position: absolute;
     background-color: #ff8b38;
     top: 95px;
@@ -148,10 +154,9 @@ header .menu li a:hover{
     border: 1px solid rgba(255,255,255,0.3);
 }
 
-/*burguermenu*/
-.navmenu{
+/*hidden burguer-menu*/
+.burguer-menu{
     width: 25%;
-    list-style: none;
     right: 0;
     position: absolute;
     background-color: #ff8b38;
@@ -162,41 +167,31 @@ header .menu li a:hover{
     border: 1px solid rgba(255,255,255,0.3);
 }
 
-.navmenu li, .lang li{
+.burguer-menu li, .lang-menu li{
     padding: 4% 3%;
 }
 
-.navmenu li a, .lang li a{
+.burguer-menu li a, .lang-menu li a{
     font-family: "open_sansextrabold";
     font-size: 2em;
     text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-}
-
-.navmenu li a:hover, .lang li a:hover{
-    color: black;
 }
 
 .selected{
     text-decoration: line-through;
 }
 
-/*catmenu*/
-
-.cat-menu li a{
-    font-family: "open_sansextrabold";
+/*hidden categ-menu*/
+.categ-menu li a{
     font-size: 1.4em;
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
 }
 
-#cat-arrow, .cat-action #cat-arrow{
-    padding-right: 10px;
+.burguer-menu i{
+    padding-right: 5%;
 }
 
-.cat-action{
+/*rotation categ-icon*/
+.categ-menu-action{
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -204,13 +199,20 @@ header .menu li a:hover{
     transform: rotateX(180deg);
 }
 
-/*main*/
+/*<hr/> menu divider*/
+.menu-divider{
+    width: 100%;
+    border: 2px solid rgba(255,255,255,0.1);
+}
+
+
+/***MAIN***/
 
 .main{
     width: 100%;
-    padding-top: 90px;
+    padding-top: 95px;
     position: relative;
-    overflow: visible;
+    overflow: visible;/*visible menus*/
     z-index: 0;
 }
 
@@ -218,7 +220,7 @@ header .menu li a:hover{
     width: 100%;
 }
 
-/*destacados home*/
+/*DESTACADOS*/
 .destacados{
     overflow: hidden;
     position: relative;
@@ -236,38 +238,40 @@ header .menu li a:hover{
     border-bottom: 3px solid #ff8b38;
 }
 
-
-.destacados .eventos-min{
+/*eventos-min = 3 eventos x fila*/
+.eventos-min{
     width: 100%;
     overflow: hidden;
     padding: 2% 0;
     clear: both;
 }
 
-.destacados .eventos-min figure{
+.eventos-min figure{
     width: 32%;
     float: left;
     margin-right: 2%;
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    padding: 1.5% 0 0 0 ;
+    padding: 1.5% 0 0 0;
 }
 
-.destacados .eventos-min .no-margin{
+/*last child of the row*/
+.eventos-min .no-margin, footer .no-margin{
     margin: 0;
+    margin-right: 0;
 }
 
-.destacados .eventos-min figure img{
+.eventos-min figure img{
     width: 100%;
 }
 
 .eventos-min figure figcaption{
     position: absolute;
-    bottom: 4px;
+    bottom: 1.5%;
     background-color: rgba(255,255,255,0.6);
     width: 100%;
-    padding: 5px 2px;
+    padding: 1% 2%;
     color: black;
 }
 
@@ -296,12 +300,13 @@ header .menu li a:hover{
     color: orange;
 }*/
 
-/*footer*/
+
+/***FOOTER***/
 footer{
     position: relative;
     background-color: #ff8b38;
     overflow: hidden;
-    padding: 10px 0 0 0;
+    padding: 1.6% 0 0 0;
 }
 
 footer .container div{
@@ -311,11 +316,11 @@ footer .container div{
     overflow: hidden;
 }
 
-footer .container div:nth-child(3){
+footer .container div:last-child{
     margin: 0;
 }
 
-footer .puntos-venta h2{
+footer .puntos-venta h2, footer .medios-pago h2, footer .redes-sociales h2{
     width: 100%;
 }
 
@@ -329,18 +334,10 @@ footer .puntos-venta img:last-child, footer .medios-pago img:last-child, footer 
     margin: 0;
 }
 
-footer .medios-pago h2{
-    width: 100%;
-}
-
 footer .medios-pago img{
     width: 32%;
     margin-right: 2%;
     float: left;
-}
-
-footer .redes-sociales .rs{
-    list-style: none;
 }
 
 footer .rs li{
@@ -350,12 +347,7 @@ footer .rs li{
     float: left;
 }
 
-footer .rs li:last-child{
-    margin: 0;
-}
-
 footer .rs a{
-    text-decoration: none;
     font-size: 2em;
     padding: 2% 4%;
     color: white;
@@ -367,7 +359,7 @@ footer .rs a:hover{
 }
 
 footer .subtitle-footer{
-    padding: 20px 0;
+    padding: 5% 0;
     font-family: 'open_sansextrabold';
     font-size: 1.2em;
     text-transform: uppercase;
@@ -386,4 +378,5 @@ footer .copyright{
     padding: 0 0 0 0;
     background-color: white;
     color: #ff8b38;
+    font-weight: bold;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang-menu="en">
 <head>
     <meta charset="UTF-8">
     <title>Puntoticket</title>
@@ -24,29 +24,35 @@
                 <a href="#"><img src="img/logo-puntoticket.png" alt="Logo puntoticket"></a>
             </div>
             <nav>
-                <div class="searchbox">
-                    <input type="text" placeholder="Buscar" id="search">
+                <div class="search">
+                    <input type="text" placeholder="Buscar" id="search-box">
                 </div>
-                <ul class="menu">
-                    <li><a href="#" class="fa fa-search" id="searchbtn"></a></li>
-                    <li><a href="#" class="fa fa-globe" id="langbtn"></a></li>
-                    <li><a href="#" class="fa fa-navicon" id="menuicon"></a></li>
+                <ul class="main-menu">
+                    <li><a href="#" class="fa fa-search" id="search-btn"></a></li>
+                    <li><a href="#" class="fa fa-globe" id="lang-btn"></a></li>
+                    <li><a href="#" class="fa fa-navicon" id="burguer-btn"></a></li>
                 </ul> 
                 <!--burguermenu-->
-                <ul class="navmenu">
+                <ul class="burguer-menu">
                     <li><a href="index.html" class="selected">Home</a></li>
-                    <li><a href="#" id="catbtn"><i class="fa fa-caret-down" id="cat-arrow"></i>Categorías</a></li>
-                    <div class="cat-menu">
-                        <li><a href="#">Música</a></li>
-                        <li><a href="#">Cultura</a></li>
-                        <li><a href="#">Deportes</a></li>
-                        <li><a href="#">Misceláneos</a></li>
+                    <li><a href="#" id="categ-btn"><i class="fa fa-caret-down" id="categ-icon"></i>Categorías</a></li>
+                    <!--categories menu-->
+                    <div class="categ-menu">
+                        <li><a href="#"><i class="fa fa-caret-right"></i>Música</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i>Cultura</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i>Deportes</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i>Misceláneos</a></li>
                     </div>
                     <li><a href="acercade.html">Acerca de</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
+                    <hr class="menu-divider">
+                    <li><a href="#">Iniciar sesión</a></li>
+                    <li><a href="#">Registro</a></li>
+                    <hr class="menu-divider">
+                    <li><a href="#" id="cerrar-btn">Cerrar</a></li>
                 </ul>
                 <!--languagemenu-->
-                <ul class="lang">
+                <ul class="lang-menu">
                     <li><a href="#">Español</a></li>
                     <li><a href="#">English</a></li>
                     <li><a href="#">Portuguese</a></li>
