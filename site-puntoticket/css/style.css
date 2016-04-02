@@ -292,14 +292,39 @@ header li a:hover{
     font-size: 1.3em;
 }
 
+.icon-ev{
+    display: none;
+}
 
 .eventos-min figure:hover figcaption{
     height: 100%;
-    padding: 35% 0;
+    padding: 25% 0;
     text-align: center;
     background-color: rgba(255,255,255,0.8);
     font-size: 1.2em;
     transition: 0.2s;
+}
+
+.icon-ev .icon-eye{
+    padding: 10px;
+    font-size: 30px;
+    border: 1.5px solid black;
+    border-radius: 100px;
+}
+
+.eventos-min figure .icon-ev{
+    display: none;
+}
+
+
+.eventos-min figure:hover .icon-ev{
+    display: inline;
+}
+
+.eventos-min figure .icon-ev .icon-eye:hover{
+    color: #ff8b38;
+    border-color: #ff8b38;
+    transition: 0.3s;
 }
 
 .eventos-min figure figcaption p{
@@ -378,10 +403,16 @@ header li a:hover{
     color: white;
 }
 
+
 /***hidden content***/
 .hidden-fig{
     display: none;
 }
+
+.icon-ev{
+    display: none;
+}
+
 /***FOOTER***/
 footer{
     position: relative;
