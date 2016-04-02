@@ -51,14 +51,24 @@ $(document).ready(function(){
         $(".burguer-menu").slideUp(500); 
     });
     
+    //HIDDEN EVENTS
+    $("#ver-mas-btn").click(function(e){
+       $(".hidden-fig:hidden").slice(0,6).fadeIn(2000);
+        if($(".hidden-fig:hidden").length == 0){
+            $("#ver-mas-btn").html("No hay más eventos para mostrar");
+            $("#ver-mas-btn").removeClass("to-press-btn");
+            $("#ver-mas-btn").addClass("pressed-btn");
+            e.preventDefault();
+        }
+    });
+    
     //SLIDER ACTION
     //http://unslider.com/
-    $('#slider-main').unslider({
+    $("#slider-main").unslider({
         autoplay: true,
         infinite: true,
         delay: 5000,
         nav: false,
         arrows: false
-    });
-        
+    });    
 });

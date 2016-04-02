@@ -345,7 +345,43 @@ header li a:hover{
     padding-top:  12%;
 }
 
+.int-content .ver-mas{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 2% 0 4% 0;
+}
 
+.int-content #ver-mas-btn{
+    margin: 0 auto;
+    padding: 1% 6%;
+    font-family: 'open_sansextrabold';
+    font-size: 2em;
+    text-transform: uppercase;
+    border: 2px solid #ff8b38;
+    transition: 0.2s;
+}
+
+.to-press-btn{
+    cursor: pointer;
+    background: rgba(255,255,255, 0);
+    color: #ff8b38;
+}
+
+.pressed-btn{
+    color: #ff8b38;
+    cursor: default;
+}
+
+.int-content .to-press-btn:hover{
+    background-color: #ff8b38;
+    color: white;
+}
+
+/***hidden content***/
+.hidden-fig{
+    display: none;
+}
 /***FOOTER***/
 footer{
     position: relative;
