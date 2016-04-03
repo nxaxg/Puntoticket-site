@@ -89,8 +89,17 @@ header .search #search-box{
     border: 0;
     padding: 10px 5px;
     width: 100%;
-    color: white;
+    color: rgba(255,255,255,0.6);
     font-size: 1em;
+}
+
+header .search #search-box:focus{
+    outline: 1px solid black;
+    color: white;
+}
+
+header .search #search-box:focus #search-btn{
+    color: black;
 }
 
 header .main-menu{
@@ -187,8 +196,9 @@ header li a:hover{
     text-transform: uppercase;
 }
 
-.selected{
+.menu-selected{
     text-decoration: line-through;
+    color: black;
 }
 
 /*hidden categ-menu*/
@@ -351,10 +361,12 @@ header li a:hover{
     width: 100%;
     overflow: hidden;
     position: relative;
+    bottom: -5px;
 }
 
 .int-banner figure img{
     width: 100%;
+    padding: 0;
 }
 
 .int-banner figure figcaption{
@@ -367,17 +379,19 @@ header li a:hover{
 }
 
 .int-banner figure .int-title{
-    padding-top:  12%;
+    padding-top: 12%;
 }
 
-.int-content .ver-mas{
+/*ver más button*/
+
+.ver-mas{
     position: relative;
     width: 100%;
     text-align: center;
-    padding: 2% 0 4% 0;
+    padding: 3% 0 4% 0;
 }
 
-.int-content #ver-mas-btn{
+#ver-mas-btn{
     margin: 0 auto;
     padding: 1% 6%;
     font-family: 'open_sansextrabold';
@@ -398,11 +412,54 @@ header li a:hover{
     cursor: default;
 }
 
-.int-content .to-press-btn:hover{
+.to-press-btn:hover{
     background-color: #ff8b38;
     color: white;
 }
 
+/*filtro-eventos*/
+
+.filtro-ev{
+    width: 100%;
+    float: left;
+    clear: both;
+    padding-bottom: 0;
+}
+
+.filtro-ev .filtro-option{
+    width: 33.3%;
+    float: left;
+    color: #ff8b38;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    border: 2px solid #ff8b38;
+    font-family: 'open_sansextrabold';
+    padding: 2%;
+    cursor: pointer;s
+}
+
+.filtro-ev .filtro-option p{
+    font-size: 2em;
+}
+
+.filtro-ev .filtro-option .title-filtro{
+    font-size: 1.4em;
+    padding-top: 4%;
+}
+
+.filtro-ev .filtro-selected, .filtro-ev .filtro-option:hover{
+    background-color: #ff8b38;
+    color: white;
+}
+
+.filtro-ev .filtro-option:first-child{
+    border-right: 0;
+}
+
+.filtro-ev .filtro-option:last-child{
+    border-left: 0;
+}
 
 /***hidden content***/
 .hidden-fig{

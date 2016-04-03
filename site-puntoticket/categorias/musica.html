@@ -34,10 +34,10 @@
                 <!--burguermenu-->
                 <ul class="burguer-menu">
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="#" id="categ-btn" class="selected"><i class="fa fa-caret-down" id="categ-icon"></i>Categorías</a></li>
+                    <li><a href="#" id="categ-btn" class="menu-selected"><i class="fa fa-caret-down" id="categ-icon"></i>Categorías</a></li>
                     <!--categories menu-->
                     <div class="categ-menu">
-                        <li><a href="#" class="selected"><i class="fa fa-caret-right"></i>Música</a></li>
+                        <li><a href="#" class="menu-selected"><i class="fa fa-caret-right"></i>Música</a></li>
                         <li><a href="cultura.html"><i class="fa fa-caret-right"></i>Cultura</a></li>
                         <li><a href="deportes.html"><i class="fa fa-caret-right"></i>Deportes</a></li>
                         <li><a href="miscelaneos.html"><i class="fa fa-caret-right"></i>Misceláneos</a></li>
@@ -72,286 +72,346 @@
     <!--interior content-->
     <section class="int-content">
         <div class="container">
+            <div class="filtro-ev">
+                <div class="filtro-option filtro-selected">
+                    <p class="fa fa-heart-o"></p>
+                    <h2 class="title-filtro">Popular</h2>
+                </div>
+                <div class="filtro-option">
+                    <p class="fa fa-calendar"></p>
+                    <h2 class="title-filtro">Fecha</h2>
+                </div>
+                <div class="filtro-option">
+                    <p class="fa fa-hand-o-down"></p>
+                    <h2 class="title-filtro">A-Z</h2>
+                </div>
+            </div>
             <div class="eventos-min">
                <!--starter ones-->
-                <figure>
-                    <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
-                    <figcaption>
-                        <p class="icon-ev">
-                            <span class="fa fa-eye icon-eye"></span>
-                        </p>
-                        <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
-                        <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
-                        <p class="lugar-ev-min">Teatro Cariola</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="../img/min-cityandcolour.jpg" alt="City and Colour live">
-                    <figcaption>
-                       <p class="icon-ev">
-                            <span class="fa fa-eye icon-eye"></span>
-                        </p>
-                        <h2 class="subtitle-ev-min">City and Colour</h2>
-                        <p class="fecha-ev-min">23 Abril 21:00 hrs.</p>
-                        <p class="lugar-ev-min">Teatro La Cúpula</p>
-                    </figcaption>
-                </figure>
-                <figure class="no-margin">
-                    <img src="../img/min-cob.jpg" alt="Children of Bodom guitar live">
-                    <figcaption>
-                       <p class="icon-ev">
-                            <span class="fa fa-eye icon-eye"></span>
-                        </p>
-                        <h2 class="subtitle-ev-min">Children of Bodom</h2>
-                        <p class="fecha-ev-min">24 Mayo 20:30 hrs.</p>
-                        <p class="lugar-ev-min">Teatro Cariola</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="../img/min-nickcave.jpg" alt="Nick Cave and the bad seed live">
-                    <figcaption>
-                       <p class="icon-ev">
-                            <span class="fa fa-eye icon-eye"></span>
-                        </p>
-                        <h2 class="subtitle-ev-min">Nick Cave & The Bad Seeds</h2>
-                        <p class="fecha-ev-min">31 Julio 21:30 hrs.</p>
-                        <p class="lugar-ev-min">Teatro Nescafé de las artes</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="../img/min-swans.jpg" alt="Svvans live show">
-                    <figcaption>
-                       <p class="icon-ev">
-                            <span class="fa fa-eye icon-eye"></span>
-                        </p>
-                        <h2 class="subtitle-ev-min">Swans</h2>
-                        <p class="fecha-ev-min">31 Septiembre 22:00 hrs.</p>
-                        <p class="lugar-ev-min">Teatro Caupolicán</p>
-                    </figcaption>
-                </figure>
-                <figure class="no-margin">
-                    <img src="../img/min-foals.jpg" alt="Foals live">
-                    <figcaption>
-                        <p class="icon-ev" data-tooltip="Open event">
-                            <span class="fa fa-eye icon-eye" ></span>
-                        </p>
-                        <h2 class="subtitle-ev-min">Foals</h2>
-                        <p class="fecha-ev-min">12 Octubre 21:00 hrs.</p>
-                        <p class="lugar-ev-min">Teatro la Cúpula</p>
-                    </figcaption>
-                </figure>
+                <a href="musica/thedillingerescplan.html">
+                    <figure>
+                        <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
+                        <figcaption>
+                            <p class="icon-ev">
+                                <span class="fa fa-eye icon-eye"></span>
+                            </p>
+                            <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
+                            <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
+                            <p class="lugar-ev-min">Teatro Cariola</p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img src="../img/min-cityandcolour.jpg" alt="City and Colour live">
+                        <figcaption>
+                           <p class="icon-ev">
+                                <span class="fa fa-eye icon-eye"></span>
+                            </p>
+                            <h2 class="subtitle-ev-min">City and Colour</h2>
+                            <p class="fecha-ev-min">23 Abril 21:00 hrs.</p>
+                            <p class="lugar-ev-min">Teatro La Cúpula</p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="no-margin">
+                        <img src="../img/min-cob.jpg" alt="Children of Bodom guitar live">
+                        <figcaption>
+                           <p class="icon-ev">
+                                <span class="fa fa-eye icon-eye"></span>
+                            </p>
+                            <h2 class="subtitle-ev-min">Children of Bodom</h2>
+                            <p class="fecha-ev-min">24 Mayo 20:30 hrs.</p>
+                            <p class="lugar-ev-min">Teatro Cariola</p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img src="../img/min-nickcave.jpg" alt="Nick Cave and the bad seed live">
+                        <figcaption>
+                           <p class="icon-ev">
+                                <span class="fa fa-eye icon-eye"></span>
+                            </p>
+                            <h2 class="subtitle-ev-min">Nick Cave & The Bad Seeds</h2>
+                            <p class="fecha-ev-min">31 Julio 21:30 hrs.</p>
+                            <p class="lugar-ev-min">Teatro Nescafé de las artes</p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img src="../img/min-swans.jpg" alt="Svvans live show">
+                        <figcaption>
+                           <p class="icon-ev">
+                                <span class="fa fa-eye icon-eye"></span>
+                            </p>
+                            <h2 class="subtitle-ev-min">Swans</h2>
+                            <p class="fecha-ev-min">31 Septiembre 22:00 hrs.</p>
+                            <p class="lugar-ev-min">Teatro Caupolicán</p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="no-margin">
+                        <img src="../img/min-foals.jpg" alt="Foals live">
+                        <figcaption>
+                            <p class="icon-ev" data-tooltip="Open event">
+                                <span class="fa fa-eye icon-eye" ></span>
+                            </p>
+                            <h2 class="subtitle-ev-min">Foals</h2>
+                            <p class="fecha-ev-min">12 Octubre 21:00 hrs.</p>
+                            <p class="lugar-ev-min">Teatro la Cúpula</p>
+                        </figcaption>
+                    </figure>
+                </a>
                   
-                   <!--1-6-->
+                   <!--escondidos 1-6-->
                    <!--TDEP-->
-                    <figure class="hidden-fig">
-                        <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
-                        <figcaption>
-                            <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
-                            <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Cariola</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="hidden-fig">
-                        <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
-                        <figcaption>
-                            <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
-                            <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Cariola</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="no-margin hidden-fig">
-                        <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
-                        <figcaption>
-                            <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
-                            <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Cariola</p>
-                        </figcaption>
-                    </figure>
+                    <a href="musica/thedillingerescplan.html">
+                        <figure class="hidden-fig">
+                            <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
+                            <figcaption>
+                                <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
+                                <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Cariola</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="musica/thedillingerescplan.html">
+                        <figure class="hidden-fig">
+                            <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
+                            <figcaption>
+                                <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
+                                <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Cariola</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="musica/thedillingerescplan.html">
+                        <figure class="hidden-fig no-margin">
+                            <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
+                            <figcaption>
+                                <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
+                                <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Cariola</p>
+                            </figcaption>
+                        </figure>
+                    </a>
                     
-                    <figure class="hidden-fig">
-                        <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
-                        <figcaption>
-                            <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
-                            <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Cariola</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="hidden-fig">
-                        <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
-                        <figcaption>
-                            <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
-                            <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Cariola</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="no-margin hidden-fig">
-                        <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
-                        <figcaption>
-                            <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
-                            <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Cariola</p>
-                        </figcaption>
-                    </figure>
+                    <a href="musica/thedillingerescplan.html">
+                        <figure class="hidden-fig">
+                            <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
+                            <figcaption>
+                                <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
+                                <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Cariola</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="musica/thedillingerescplan.html">
+                        <figure class="hidden-fig">
+                            <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
+                            <figcaption>
+                                <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
+                                <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Cariola</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="musica/thedillingerescplan.html">
+                        <figure class="hidden-fig no-margin">
+                            <img src="../img/min-tdep.jpg" alt="The Dillinger Escape Plan Show">
+                            <figcaption>
+                                <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">The Dillinger Escape Plan</h2>
+                                <p class="fecha-ev-min">16 Abril 21:00 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Cariola</p>
+                            </figcaption>
+                        </figure>
+                    </a>
                     
-                    <!--7-12-->
+                    <!--escondidos 7-12-->
                     <!--Nick Cave-->
-                    <figure class="hidden-fig">
-                       <img src="../img/min-nickcave.jpg" alt="Nick Cave and the bad seed live">
-                        <figcaption>
-                           <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">Nick Cave & The Bad Seeds</h2>
-                            <p class="fecha-ev-min">31 Julio 21:30 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Nescafé de las artes</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="hidden-fig">
-                        <img src="../img/min-nickcave.jpg" alt="Nick Cave and the bad seed live">
-                        <figcaption>
-                           <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">Nick Cave & The Bad Seeds</h2>
-                            <p class="fecha-ev-min">31 Julio 21:30 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Nescafé de las artes</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="no-margin hidden-fig">
-                        <img src="../img/min-nickcave.jpg" alt="Nick Cave and the bad seed live">
-                        <figcaption>
-                           <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">Nick Cave & The Bad Seeds</h2>
-                            <p class="fecha-ev-min">31 Julio 21:30 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Nescafé de las artes</p>
-                        </figcaption>
-                    </figure>
+                    <a href="#">
+                        <figure class="hidden-fig">
+                           <img src="../img/min-nickcave.jpg" alt="Nick Cave and the bad seed live">
+                            <figcaption>
+                               <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">Nick Cave & The Bad Seeds</h2>
+                                <p class="fecha-ev-min">31 Julio 21:30 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Nescafé de las artes</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="hidden-fig">
+                           <img src="../img/min-nickcave.jpg" alt="Nick Cave and the bad seed live">
+                            <figcaption>
+                               <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">Nick Cave & The Bad Seeds</h2>
+                                <p class="fecha-ev-min">31 Julio 21:30 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Nescafé de las artes</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="hidden-fig no-margin">
+                           <img src="../img/min-nickcave.jpg" alt="Nick Cave and the bad seed live">
+                            <figcaption>
+                               <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">Nick Cave & The Bad Seeds</h2>
+                                <p class="fecha-ev-min">31 Julio 21:30 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Nescafé de las artes</p>
+                            </figcaption>
+                        </figure>
+                    </a>
                     
-                    <figure class="hidden-fig">
-                       <img src="../img/min-nickcave.jpg" alt="Nick Cave and the bad seed live">
-                        <figcaption>
-                           <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">Nick Cave & The Bad Seeds</h2>
-                            <p class="fecha-ev-min">31 Julio 21:30 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Nescafé de las artes</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="hidden-fig">
-                        <img src="../img/min-nickcave.jpg" alt="Nick Cave and the bad seed live">
-                        <figcaption>
-                           <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">Nick Cave & The Bad Seeds</h2>
-                            <p class="fecha-ev-min">31 Julio 21:30 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Nescafé de las artes</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="no-margin hidden-fig">
-                        <img src="../img/min-nickcave.jpg" alt="Nick Cave and the bad seed live">
-                        <figcaption>
-                           <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">Nick Cave & The Bad Seeds</h2>
-                            <p class="fecha-ev-min">31 Julio 21:30 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Nescafé de las artes</p>
-                        </figcaption>
-                    </figure>
-                    
-                    
-                    <!--13-18-->
+                    <a href="#">
+                        <figure class="hidden-fig">
+                           <img src="../img/min-nickcave.jpg" alt="Nick Cave and the bad seed live">
+                            <figcaption>
+                               <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">Nick Cave & The Bad Seeds</h2>
+                                <p class="fecha-ev-min">31 Julio 21:30 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Nescafé de las artes</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="hidden-fig">
+                           <img src="../img/min-nickcave.jpg" alt="Nick Cave and the bad seed live">
+                            <figcaption>
+                               <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">Nick Cave & The Bad Seeds</h2>
+                                <p class="fecha-ev-min">31 Julio 21:30 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Nescafé de las artes</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="hidden-fig no-margin">
+                           <img src="../img/min-nickcave.jpg" alt="Nick Cave and the bad seed live">
+                            <figcaption>
+                               <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">Nick Cave & The Bad Seeds</h2>
+                                <p class="fecha-ev-min">31 Julio 21:30 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Nescafé de las artes</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                                        
+                    <!--escondidos 13-18-->
                     <!--Swans-->
-                    <span id="load-three"></span>
-                    <figure class="hidden-fig">
-                       <img src="../img/min-swans.jpg" alt="Svvans live show">
-                        <figcaption>
-                           <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">Swans</h2>
-                            <p class="fecha-ev-min">31 Septiembre 22:00 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Caupolicán</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="hidden-fig">
-                        <img src="../img/min-swans.jpg" alt="Svvans live show">
-                        <figcaption>
-                           <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">Swans</h2>
-                            <p class="fecha-ev-min">31 Septiembre 22:00 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Caupolicán</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="no-margin hidden-fig">
-                        <img src="../img/min-swans.jpg" alt="Svvans live show">
-                        <figcaption>
-                           <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">Swans</h2>
-                            <p class="fecha-ev-min">31 Septiembre 22:00 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Caupolicán</p>
-                        </figcaption>
-                    </figure>
+                    <a href="#">
+                        <figure class="hidden-fig">
+                           <img src="../img/min-swans.jpg" alt="Svvans live show">
+                            <figcaption>
+                               <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">Swans</h2>
+                                <p class="fecha-ev-min">31 Septiembre 22:00 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Caupolicán</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="hidden-fig">
+                           <img src="../img/min-swans.jpg" alt="Svvans live show">
+                            <figcaption>
+                               <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">Swans</h2>
+                                <p class="fecha-ev-min">31 Septiembre 22:00 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Caupolicán</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="hidden-fig no-margin">
+                           <img src="../img/min-swans.jpg" alt="Svvans live show">
+                            <figcaption>
+                               <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">Swans</h2>
+                                <p class="fecha-ev-min">31 Septiembre 22:00 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Caupolicán</p>
+                            </figcaption>
+                        </figure>
+                    </a>
                     
-                    <figure class="hidden-fig">
-                       <img src="../img/min-swans.jpg" alt="Svvans live show">
-                        <figcaption>
-                           <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">Swans</h2>
-                            <p class="fecha-ev-min">31 Septiembre 22:00 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Caupolicán</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="hidden-fig">
-                        <img src="../img/min-swans.jpg" alt="Svvans live show">
-                        <figcaption>
-                           <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">Swans</h2>
-                            <p class="fecha-ev-min">31 Septiembre 22:00 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Caupolicán</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="no-margin hidden-fig">
-                        <img src="../img/min-swans.jpg" alt="Svvans live show">
-                        <figcaption>
-                           <p class="icon-ev">
-                                <span class="fa fa-eye icon-eye"></span>
-                            </p>
-                            <h2 class="subtitle-ev-min">Swans</h2>
-                            <p class="fecha-ev-min">31 Septiembre 22:00 hrs.</p>
-                            <p class="lugar-ev-min">Teatro Caupolicán</p>
-                        </figcaption>
-                    </figure>
+                    <a href="#">
+                        <figure class="hidden-fig">
+                           <img src="../img/min-swans.jpg" alt="Svvans live show">
+                            <figcaption>
+                               <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">Swans</h2>
+                                <p class="fecha-ev-min">31 Septiembre 22:00 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Caupolicán</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="hidden-fig">
+                           <img src="../img/min-swans.jpg" alt="Svvans live show">
+                            <figcaption>
+                               <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">Swans</h2>
+                                <p class="fecha-ev-min">31 Septiembre 22:00 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Caupolicán</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="hidden-fig no-margin">
+                           <img src="../img/min-swans.jpg" alt="Svvans live show">
+                            <figcaption>
+                               <p class="icon-ev">
+                                    <span class="fa fa-eye icon-eye"></span>
+                                </p>
+                                <h2 class="subtitle-ev-min">Swans</h2>
+                                <p class="fecha-ev-min">31 Septiembre 22:00 hrs.</p>
+                                <p class="lugar-ev-min">Teatro Caupolicán</p>
+                            </figcaption>
+                        </figure>
+                    </a>
             </div>
             <div class="ver-mas">
                     <a href="#ver-mas-btn" id="ver-mas-btn" class="to-press-btn">Ver más</a>

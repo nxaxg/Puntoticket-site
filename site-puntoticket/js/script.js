@@ -62,6 +62,11 @@ $(document).ready(function(){
         }
     });
     
+    $(".filtro-option").click(function(){
+       $(".filtro-ev div").removeClass("filtro-selected");
+        $(this).addClass("filtro-selected");
+    });
+    
     //SLIDER ACTION
     //http://unslider.com/
     $("#slider-main").unslider({
