@@ -3,6 +3,8 @@
  *   to change anything here, and doing so might break
  *   stuff. Here be dragons and all that.
  */
+
+
 /**
  *   Default variables
  *
@@ -11,23 +13,36 @@
  *   CSS and include that instead to use some of that
  *   hardware-accelerated goodness.
  */
+
+
+/*added*/
+
+.unslider-nav {
+    position: absolute;
+    width: 100%;
+    bottom: 1%;
+}
+
 .unslider-nav ol {
-  list-style: none;
-  text-align: center;
+    list-style: none;
+    text-align: center;
 }
+
 .unslider-nav ol li {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin: 0 4px;
-  background: transparent;
-  border-radius: 5px;
-  overflow: hidden;
-  text-indent: -999em;
-  border: 2px solid #fff;
-  cursor: pointer;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+    margin: 0 4px;
+    /*no-number*/
+    color: rgba(255,255,255,0);
+    background: transparent;
+    overflow: hidden;
+    border: 2px solid rgba(255,255,255,0.8);
+    cursor: pointer;
 }
+
 .unslider-nav ol li.unslider-active {
-  background: #fff;
-  cursor: default;
+    background: rgba(255,255,255,0.8);
+    cursor: default;
 }

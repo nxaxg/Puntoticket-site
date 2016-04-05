@@ -73,7 +73,8 @@ $(document).ready(function(){
         autoplay: true,
         infinite: true,
         delay: 5000,
-        nav: false,
-        arrows: false
+        nav: true,
+        arrows: false,
+        dots: true
     });    
 });
