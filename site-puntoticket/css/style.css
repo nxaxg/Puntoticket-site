@@ -66,7 +66,7 @@ header .logo{
     width: 30%;
     margin-right: 30%;
     float: left;
-    padding: 0.6% 0 0.6% 1%;
+    padding: 0.5% 0 0.5% 0;
 }
 
 header .logo img{
@@ -372,6 +372,147 @@ header li a:hover{
 
 .int-banner figure .int-title{
     padding-top: 12%;
+}
+
+/*EVENTO*/
+
+.int-banner-evento{
+    width: 100%;
+    z-index: 3;
+    padding-top: 1%;
+}
+
+.int-banner-evento figure{
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    bottom: -5px;
+}
+
+.int-banner-evento img{
+    width: 100%;
+    padding: 0;
+}
+
+.int-banner-evento figure figcaption{
+    width: 100%;
+    height: 15%;
+    background-color: rgba(255, 139, 56, 0.5);
+    position: absolute;
+    bottom: 3px;
+}
+
+.int-banner-evento figure figcaption .int-title{
+    font-family: 'open_sansextrabold';
+    font-size: 3em;
+    padding: 0 5%;
+}
+
+/*content evento*/
+
+.int-content .info-ev{
+    width: 100%;
+    overflow: hidden;
+}
+
+.info-ev .evento-col-50porc{
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+    padding: 2%;
+}
+
+.info-ev .evento-col-50porc:last-child{
+    margin: 0;
+}
+
+.info-ev .info-table{
+    width: 100%;
+    overflow: hidden;
+    background-color: #d9d9d9;
+    border-collapse: collapse;
+    color: black;
+}
+
+.info-ev .info-table tr:nth-child(odd){
+    background-color: #e6e6e6;
+}
+
+.info-ev .info-table td{
+    padding: 2%;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    overflow: hidden;
+    clear: both;
+}
+
+.info-table tr, .info-table td{
+    border: 0;
+    
+}
+
+.info-ev .info-table .table-title{
+    text-align: left;
+    font-family: 'open_sansextrabold';
+}
+
+.info-ev .info-table .table-text{
+    text-align: right;
+}
+
+.map-tdep{
+    width: 100%;
+    overflow: hidden;
+}
+
+.map-tdep img{
+    width: 60%;
+    margin: 0 5% 0 0;
+    float: left;
+}
+
+.map-tdep figcaption{
+    width: 35%;
+    float: left;
+}
+
+.map-tdep .ubicaciones-tdep{
+    color: black;
+    width: 100%;
+    padding: 30% 5%;
+}
+
+.map-tdep .ubicaciones-tdep li{
+    width: 100%;
+    display: inline-block;
+    padding: 2% 0;
+}
+
+.map-tdep .ubicaciones-tdep i{
+    width: 20%;
+    float: left;
+    text-align: center;
+    padding: 2%;
+}
+
+.map-tdep .ubicaciones-tdep p{
+    width: 80%;
+    float: left;
+    padding-left: 2%;
+}
+
+.map-tdep .ubicaciones-tdep .cancha-tdep i{
+    color: #ff8b38;
+}
+.map-tdep .ubicaciones-tdep .platea-tdep i{
+    color: cyan;
+}
+.map-tdep .ubicaciones-tdep .palcoa-tdep i{
+    color: limegreen;
+}
+.map-tdep .ubicaciones-tdep .palcob-tdep i{
+    color: red;
 }
 
 /*ver más button*/

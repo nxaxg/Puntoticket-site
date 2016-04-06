@@ -2,9 +2,147 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Evento: The Dillinger Escape Plan | Puntoticket</title>
+    <!--Site style-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <!--Open sans font-->
+    <link rel="stylesheet" href="../../fonts/OpenSans/stylesheet.css">
+    <!--JQuery library-->
+    <script src="../../js/jquery-1.11.3.js"></script>
+    <!--JS and JQ actions-->
+    <script src="../../js/script.js"></script>
+    <!--Title bar Icon-->
+    <link rel="shortcut icon" href="../../img/web-icon.png" />
 </head>
 <body>
-    TDEP
+   <!--header-->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../../index.html"><img src="../../img/logo-puntoticket.png" alt="Logo puntoticket"></a>
+            </div>
+            <nav>
+                <div class="search">
+                    <input type="text" placeholder="Buscar" id="search-box">
+                </div>
+                <ul class="main-menu">
+                    <li><a href="#" class="fa fa-search" id="search-btn"></a></li>
+                    <li><a href="#" class="fa fa-globe" id="lang-btn"></a></li>
+                    <li><a href="#" class="fa fa-navicon" id="burguer-btn"></a></li>
+                </ul> 
+                <!--burguermenu-->
+                <ul class="burguer-menu">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#" id="categ-btn" class="menu-selected"><i class="fa fa-caret-down" id="categ-icon"></i>Categorías</a></li>
+                    <!--categories menu-->
+                    <div class="categ-menu">
+                        <li><a href="#" class="menu-selected"><i class="fa fa-caret-right"></i>Música</a></li>
+                        <li><a href="cultura.html"><i class="fa fa-caret-right"></i>Cultura</a></li>
+                        <li><a href="deportes.html"><i class="fa fa-caret-right"></i>Deportes</a></li>
+                        <li><a href="miscelaneos.html"><i class="fa fa-caret-right"></i>Misceláneos</a></li>
+                    </div>
+                    <li><a href="../../acercade.html">Acerca de</a></li>
+                    <li><a href="../../contacto.html">Contacto</a></li>
+                    <hr class="menu-divider">
+                    <li><a href="#">Iniciar sesión</a></li>
+                    <li><a href="#">Registro</a></li>
+                    <hr class="menu-divider">
+                    <li><a href="#" id="cerrar-btn">Cerrar</a></li>
+                </ul>
+                <!--languagemenu-->
+                <ul class="lang-menu">
+                    <li><a href="#" class="menu-selected">Español</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Portuguese</a></li>
+                    <li><a href="#">Deutsch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!--main-->
+    <section class="int-banner-evento">
+        <figure>
+            <img src="../../img/banner-tdep.jpg" alt="Banner de Música: concierto random">
+            <figcaption>
+                <h2 class="int-title">The dillinger Escape Plan</h2>
+            </figcaption>
+        </figure>
+    </section>
+    
+    <!--content-->
+    <section class="int-content">
+        <div class="container">
+            <div class="filtro-ev">
+                <div class="filtro-option filtro-selected">
+                    <p class="fa fa-info-circle"></p>
+                    <h2 class="title-filtro">Información</h2>
+                </div>
+                <div class="filtro-option">
+                    <p class="fa fa-commenting"></p>
+                    <h2 class="title-filtro">Reseña</h2>
+                </div>
+                <div class="filtro-option">
+                    <p class="fa fa-map-marker"></p>
+                    <h2 class="title-filtro">¿Cómo llegar?</h2>
+                </div>
+            </div>
+            <div class="info-ev">
+                <div class="evento-col-50porc">
+                    <table class="info-table">
+                        <tr>
+                            <td class="table-title">Fecha:</td>
+                            <td class="table-text">Sábado 16 de Abril de 2016</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Hora:</td>
+                            <td class="table-text">21:30 horas</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Lugar:</span>
+                            <td class="table-text">Teatro Cariola, Santiago</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Valores:</td>
+                            <td class="table-text">Cancha: &#36;25.000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="table-text">Platea: &#36;25.000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="table-text">Palco (A y B): &#36;38.000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="evento-col-50porc">
+                    <figure class="map-tdep">
+                        <img src="../../img/map-tdep.png" alt="Mapa de escenario y ubicaciones: TDEP">
+                        <figcaption>
+                            <ul class="ubicaciones-tdep">
+                                <li class="cancha-tdep">
+                                    <i class="fa fa-square"></i>
+                                    <p>Cancha</p>
+                                </li>
+                                <li class="platea-tdep">
+                                    <i class="fa fa-square"></i>
+                                    <p>Platea</p>
+                                </li>
+                                <li class="palcoa-tdep">
+                                    <i class="fa fa-square"></i>
+                                    <p>Palco A</p>
+                                </li>
+                                <li class="palcob-tdep">
+                                    <i class="fa fa-square"></i>
+                                    <p>Palco B</p>
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
