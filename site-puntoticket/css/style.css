@@ -517,14 +517,14 @@ header li a:hover{
 
 /*ver más button*/
 
-.ver-mas{
+.ver-mas, .comprar-btn{
     position: relative;
     width: 100%;
     text-align: center;
     padding: 3% 0 4% 0;
 }
 
-#ver-mas-btn{
+#ver-mas-btn, #comprar-btn{
     margin: 0 auto;
     padding: 1% 6%;
     font-family: 'open_sansextrabold';
@@ -534,9 +534,7 @@ header li a:hover{
     transition: 0.2s;
 }
 
-.to-press-btn{
-    cursor: pointer;
-    background: rgba(255,255,255, 0);
+.to-press-btn, #comprar-btn{
     color: #ff8b38;
 }
 
@@ -545,7 +543,7 @@ header li a:hover{
     cursor: default;
 }
 
-.to-press-btn:hover{
+.to-press-btn:hover, #comprar-btn:hover{
     background-color: #ff8b38;
     color: white;
 }
