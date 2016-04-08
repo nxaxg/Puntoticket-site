@@ -240,7 +240,7 @@ header li a:hover{
     width: 100%;
 }
 
-.destacados .title{
+.title{
     font-family: 'open_sansextrabold';
     color: #ff8b38;
     font-size: 2em;
@@ -517,14 +517,14 @@ header li a:hover{
 
 /*ver más button*/
 
-.ver-mas, .comprar-btn{
+.ver-mas, .comprar-btn, .checkout-btn{
     position: relative;
     width: 100%;
     text-align: center;
     padding: 3% 0 4% 0;
 }
 
-#ver-mas-btn, #comprar-btn{
+#ver-mas-btn, #comprar-btn, #checkout-btn{
     margin: 0 auto;
     padding: 1% 6%;
     font-family: 'open_sansextrabold';
@@ -534,7 +534,7 @@ header li a:hover{
     transition: 0.2s;
 }
 
-.to-press-btn, #comprar-btn{
+.to-press-btn, #comprar-btn, #checkout-btn{
     color: #ff8b38;
 }
 
@@ -543,7 +543,7 @@ header li a:hover{
     cursor: default;
 }
 
-.to-press-btn:hover, #comprar-btn:hover{
+.to-press-btn:hover, #comprar-btn:hover, #checkout-btn:hover{
     background-color: #ff8b38;
     color: white;
 }
@@ -599,6 +599,67 @@ header li a:hover{
 
 .icon-ev{
     display: none;
+}
+
+/*compra tickets*/
+
+
+.int-content .info-compra{
+    width: 70%;
+    margin: 2% auto;
+    border-collapse: collapse;
+    font-family: 'open_sanslight';
+    font-size: 1.2em;
+    color: black;
+}
+
+.info-compra th, .info-compra td{
+    padding: 2% 0;
+}
+
+.info-compra tr{
+    background-color: #d9d9d9;
+}
+
+.info-compra tr:nth-child(2){
+    text-align: center;
+}
+
+.info-compra th{
+    background-color: #ff8b38;
+    font-family: 'open_sansextrabold';
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: white;
+}
+
+.info-compra tr:nth-child(odd){
+    background-color: #e6e6e6;
+}
+
+.info-compra #tipo-sel, .info-compra #cant-sel{
+    width: 70%;
+    cursor: pointer;
+}
+
+.info-compra .valor-td{
+    font-family: 'open_sansextrabold';
+    font-size: 1.2em;
+}
+
+.info-compra .cargo, .info-compra .total{
+    text-align: center;
+}
+
+.info-compra .cargo td:first-child, .info-compra .total td:first-child{
+    text-align: right;
+}
+
+.info-compra .total{
+    font-family: 'open_sansextrabold';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-top: 6px dotted #ff8b38;
 }
 
 /***FOOTER***/

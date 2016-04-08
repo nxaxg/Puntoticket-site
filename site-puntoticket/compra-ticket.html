@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compra ticket: The Dillinger Escape Plan | Puntoticket</title>
+    <!--Site style-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--Open sans font-->
+    <link rel="stylesheet" href="fonts/OpenSans/stylesheet.css">
+    <link rel="stylesheet" href="css/jquery.editable-select.css">
+    <!--JQuery library-->
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.editable-select.js"></script>
+    <!--JS and JQ actions-->
+    <script src="js/script.js"></script>
+    <script src="js/selectAction.js"></script>
+    <!--Title bar Icon-->
+    <link rel="shortcut icon" href="img/web-icon.png" />
+</head>
+<body>
+   <!--header-->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo-puntoticket.png" alt="Logo puntoticket"></a>
+            </div>
+            <nav>
+                <div class="search">
+                    <input type="text" placeholder="Buscar" id="search-box">
+                </div>
+                <ul class="main-menu">
+                    <li><a href="#" class="fa fa-search" id="search-btn"></a></li>
+                    <li><a href="#" class="fa fa-globe" id="lang-btn"></a></li>
+                    <li><a href="#" class="fa fa-navicon" id="burguer-btn"></a></li>
+                </ul> 
+                <!--burguermenu-->
+                <ul class="burguer-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" id="categ-btn"><i class="fa fa-caret-down" id="categ-icon"></i>Categorías</a></li>
+                    <!--categories menu-->
+                    <div class="categ-menu">
+                        <li><a href="categorias/musica.htmlm"><i class="fa fa-caret-right"></i>Música</a></li>
+                        <li><a href="categorias/cultura.html"><i class="fa fa-caret-right"></i>Cultura</a></li>
+                        <li><a href="categorias/deportes.html"><i class="fa fa-caret-right"></i>Deportes</a></li>
+                        <li><a href="categorias/miscelaneos.html"><i class="fa fa-caret-right"></i>Misceláneos</a></li>
+                    </div>
+                    <li><a href="acercade.html">Acerca de</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <hr class="menu-divider">
+                    <li><a href="#">Iniciar sesión</a></li>
+                    <li><a href="#">Registro</a></li>
+                    <hr class="menu-divider">
+                    <li><a href="#" id="cerrar-btn">Cerrar</a></li>
+                </ul>
+                <!--languagemenu-->
+                <ul class="lang-menu">
+                    <li><a href="#" class="menu-selected">Español</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Portuguese</a></li>
+                    <li><a href="#">Deutsch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!--main-->
+    <section class="int-banner-evento">
+        <figure>
+            <img src="img/banner-tdep.jpg" alt="Banner de Música: concierto random">
+            <figcaption>
+                <h2 class="int-title">The dillinger Escape Plan</h2>
+            </figcaption>
+        </figure>
+    </section>
+    
+    <!--content-->
+    <section class="int-content">
+        <div class="container">
+            <h1 class="title">Compra de ticket</h1>
+            <table class="info-compra">
+                <tr>
+                    <th>Tipo ticket</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                       <select name="tipo-sel" id="tipo-sel">
+                        <option value="null">--Seleccione tipo de ticket--</option>
+                        <option value="cancha">Cancha: &#36;25.000</option>
+                        <option value="Platea">Platea: &#36;25.000</option>
+                        <option value="Palco A">Palco A: &#36;38.000</option>
+                        <option value="Palco B">Palco B: &#36;38.000</option>
+                    </select>
+                    </td>
+                    <td>
+                        <select name="tipo-sel" id="cant-sel">
+                        <option value="null">--Seleccione cantidad de tickets--</option>
+                        <option value="">01</option>
+                        <option value="">02</option>
+                        <option value="">03</option>
+                        <option value="">04</option>
+                        <option value="">05</option>
+                        <option value="">06</option>
+                        <option value="">07</option>
+                        <option value="">08</option>
+                        <option value="">09</option>
+                        <option value="">10</option>
+                    </select>
+                    </td>
+                    <td class="valor-td">
+                        &#36;25.000
+                    </td>
+                </tr>
+                <tr class="cargo">
+                    <td colspan="2">Cargo por servicio:</td>
+                    <td>&#36;2.500</td>
+                </tr>
+               
+                <tr class="total">
+                   
+                    <td colspan="2">Total a pagar:</td>
+                    <td>&#36;27.500</td>
+                </tr>
+            </table>
+            <div class="checkout-btn">
+                <a href="#" id="checkout-btn">Checkout</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="puntos-venta">
+                <h2 class="subtitle-footer">Puntos de venta</h2>
+                <img class="left" src="img/logo-ripley.png" alt="Logo Ripley">
+                <img class="right" src="img/logo-cinemark.png" alt="Logo Cinemark">
+            </div>
+            <div class="medios-pago">
+                <h2 class="subtitle-footer">Medios de pago</h2>
+                <img class="left" src="img/logo-khipu.png" alt="Logo Khipu">
+                <img src="img/logo-paypal.png" alt="Logo Paypal" class="center">
+                <img src="img/logo-webpay.png" alt="Logo Webpay" class="right">
+            </div>
+            <div class="redes-sociales">
+                <h2 class="subtitle-footer">Siguenos</h2>
+                <ul class="rs">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-circle fa-instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy;Vertikal 2016</p>
+    </footer>
+</body>
+</html>
