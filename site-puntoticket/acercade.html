@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Compra ticket: The Dillinger Escape Plan | Puntoticket</title>
+    <title>Acerca de Puntoticket</title>
     <!--Site style-->
     <link rel="stylesheet" href="css/style.css">
     <!--font awesome-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--Open sans font-->
     <link rel="stylesheet" href="fonts/OpenSans/stylesheet.css">
-    <link rel="stylesheet" href="css/jquery.editable-select.css">
     <!--JQuery library-->
     <script src="js/jquery-1.11.3.js"></script>
-    <script src="js/jquery.editable-select.js"></script>
     <!--JS and JQ actions-->
     <script src="js/script.js"></script>
-    <script src="js/selectAction.js"></script>
     <!--Title bar Icon-->
-    <link rel="shortcut icon" href="img/web-icon.png" />
+    <link rel="shortcut icon" href="img/web-icon.png">
 </head>
 <body>
    <!--header-->
@@ -41,12 +38,12 @@
                     <li><a href="#" id="categ-btn"><i class="fa fa-caret-down" id="categ-icon"></i>Categorías</a></li>
                     <!--categories menu-->
                     <div class="categ-menu">
-                        <li><a href="categorias/musica.htmlm"><i class="fa fa-caret-right"></i>Música</a></li>
-                        <li><a href="categorias/cultura.html"><i class="fa fa-caret-right"></i>Cultura</a></li>
-                        <li><a href="categorias/deportes.html"><i class="fa fa-caret-right"></i>Deportes</a></li>
-                        <li><a href="categorias/miscelaneos.html"><i class="fa fa-caret-right"></i>Misceláneos</a></li>
+                        <li><a href="Categorias/musica.html"><i class="fa fa-caret-right"></i>Música</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i>Cultura</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i>Deportes</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i>Misceláneos</a></li>
                     </div>
-                    <li><a href="acercade.html">Acerca de</a></li>
+                    <li><a href="acercade.html" class="menu-selected">Acerca de</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                     <hr class="menu-divider">
                     <li><a href="#">Iniciar sesión</a></li>
@@ -65,71 +62,7 @@
         </div>
     </header>
     
-    <!--main-->
-    <section class="int-banner-evento">
-        <figure>
-            <img src="img/banner-tdep.jpg" alt="Banner de Música: concierto random">
-            <figcaption>
-                <h2 class="int-title">The dillinger Escape Plan</h2>
-            </figcaption>
-        </figure>
-    </section>
     
-    <!--content-->
-    <section class="int-content">
-        <div class="container">
-            <h1 class="title">Compra de ticket</h1>
-            <table class="info-compra">
-                <tr>
-                    <th>Tipo ticket</th>
-                    <th>Cantidad</th>
-                    <th>Subtotal</th>
-                </tr>
-                <tr>
-                    <td>
-                       <select name="tipo-sel" id="tipo-sel">
-                        <option value="null">--Seleccione tipo de ticket--</option>
-                        <option value="cancha">Cancha: &#36;25.000</option>
-                        <option value="Platea">Platea: &#36;25.000</option>
-                        <option value="Palco A">Palco A: &#36;38.000</option>
-                        <option value="Palco B">Palco B: &#36;38.000</option>
-                    </select>
-                    </td>
-                    <td>
-                        <select name="tipo-sel" id="cant-sel">
-                        <option value="null">--Seleccione cantidad de tickets--</option>
-                        <option value="">01</option>
-                        <option value="">02</option>
-                        <option value="">03</option>
-                        <option value="">04</option>
-                        <option value="">05</option>
-                        <option value="">06</option>
-                        <option value="">07</option>
-                        <option value="">08</option>
-                        <option value="">09</option>
-                        <option value="">10</option>
-                    </select>
-                    </td>
-                    <td class="valor-td">
-                        &#36;25.000
-                    </td>
-                </tr>
-                <tr class="cargo">
-                    <td colspan="2">Cargo por servicio:</td>
-                    <td>&#36;2.500</td>
-                </tr>
-               
-                <tr class="total">
-                   
-                    <td colspan="2">Total a pagar:</td>
-                    <td>&#36;27.500</td>
-                </tr>
-            </table>
-            <div class="checkout-btn">
-                <a href="#" id="checkout-btn">Checkout</a>
-            </div>
-        </div>
-    </section>
     
     <footer>
         <div class="container">
