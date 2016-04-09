@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="fonts/OpenSans/stylesheet.css">
     <!--JQuery library-->
     <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/validateContacto.js"></script>
     <!--JS and JQ actions-->
     <script src="js/script.js"></script>
     <!--Title bar Icon-->
@@ -62,7 +64,19 @@
         </div>
     </header>
     
-    
+    <section class="int-simple-content">
+        <div class="container">
+            <h1 class="title">Contacto</h1>
+            <form id="contact" class="contact-form" action="#">
+                <input type="text" id="name" placeholder="Nombre:" required title="Por favor rellena este campo">
+                <input type="email" id="email" placeholder="Email:" required
+                title="Por favor ingresa un mail válido">
+                <input type="text" id="asunto" placeholder="Asunto:">
+                <textarea name="message" id="mensaje" rows="5" placeholder="Mensaje:" required title="¿Cuál es tu mensaje?"></textarea>
+                <input type="submit" id="contacto-btn" value="Enviar">
+            </form>
+        </div>
+    </section>
     
     <footer>
         <div class="container">
