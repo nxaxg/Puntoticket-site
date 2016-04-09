@@ -736,6 +736,71 @@ header li a:hover{
     display: inline-block;
 }
 
+/*acercade*/
+
+.acercade-accordion{
+    width: 80%;
+    margin: 2% auto;
+    font-family: 'open_sanslight';
+    font-size: 1em;
+}
+
+.accordion-text li{
+    list-style-type: upper-latin;
+}
+
+.accordion-title{
+    font-family: 'open_sansextrabold';
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #ff8b38;
+    border: 1px solid #ff8b38;
+    padding: 2%;
+    cursor: pointer;
+}
+
+.accordion-text{
+    padding: 2%;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    bottom: -2%;
+    margin-bottom: 2%;
+    color: black;
+    border: 1px solid #ff8b38;
+}
+
+.accordion-title:hover{
+    color: black;
+}
+
+.accordion-title:hover .unactive{
+    color: white;
+}
+
+.accordion-text p{
+    padding: 0.5% 2%;
+}
+
+.accordion-text ol{
+    padding: 0.5% 4%;
+}
+
+.acercade-accordion .unactive{
+    float: right;
+    text-align: right;
+    font-size: 1.8em;
+    transition: 0.5s;
+    padding: 0;
+}
+
+.active{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotateX(180deg);
+}
+
 /***FOOTER***/
 footer{
     position: relative;
